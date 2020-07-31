@@ -14,22 +14,23 @@ COMPLIMENT_URL= 'https://complimentr.com/api'
 COMPLIMENT_MODE = True;
 
 DEFAULT_TIME = datetime(2020,4,20)
-DELAYED_TIME = timedelta(seconds=4)
+DELAYED_TIME = timedelta(seconds=6)
 
 lastTimeCalled = DEFAULT_TIME
 facesDetected = False;
 
 
-PHONE_URL = "http://192.168.1.207:8080/shot.jpg"
+
 def main():
     faceDetection(lastTimeCalled, facesDetected)
-
-        
 
 def getCompliment():
     complimentRequest = requests.get(url=COMPLIMENT_URL)
     complimentText = complimentRequest.json()
     sayWords(complimentText['compliment'])
+    
+def getInsult():
+    sayWords("You are not good")
 
 def faceDetection(lastTimeCalled, facesDetected):
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -50,20 +51,22 @@ def faceDetection(lastTimeCalled, facesDetected):
 
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             faces = face_cascade.detectMultiScale(gray,1.3,7)
-            print(datetime.now() - lastTimeCalled > DELAYED_TIME)
-            # and datetime.now() - lastTimeCalled > DELAYED_TIME
-            if len(faces) > 0:
-                # if a face is detected and it wasn't called in the past 6 seconds, get a compliment
-                print("Faces Detected: ",facesDetected)
-                if facesDetected == False and datetime.now() - lastTimeCalled > DELAYED_TIME:
-                    lastTimeCalled = datetime.now()
-                    facesDetected = True
-                    getCompliment()
-            else:
-                facesDetected = False
+
+            
             # Draw rectangle around the faces
             for (x, y, w, h) in faces:
                 cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            if len(faces) > 0:
+                # if a face is detected and it wasn't called in the past 6 seconds, get a compliment
+                if facesDetected == False and datetime.now() - lastTimeCalled > DELAYED_TIME:
+                    lastTimeCalled = datetime.now()
+                    facesDetected = True
+                    if COMPLIMENT_MODE == True:
+                        getCompliment()
+                    else:
+                        getInsult()
+            else:
+                facesDetected = False
             # Display the output
             cv2.imshow('img', img)
             rawCapture.truncate(0)
@@ -77,8 +80,8 @@ def faceDetection(lastTimeCalled, facesDetected):
 def sayWords(complimentText):
     ttsObj = gTTS(text=complimentText, lang='en', slow=False)
     ttsObj.save("compliment.mp3")
-    os.system("start compliment.mp3")
-    
+    os.system("mpg321 -q compliment.mp3")
+    print("sent your message bro")
 if __name__ == "__main__":
     main()
 
