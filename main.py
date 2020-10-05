@@ -1,17 +1,23 @@
-
+# pi camera libraries
 from picamera.array import PiRGBArray
 from picamera import PiCamera
+
+# Face detection libraries
 import cv2
+import numpy as np
+
+# General usage: importing files, outputting sound via speakers
 import requests
 import time
-import urllib.request
 from gtts import gTTS
 import os
 import sys
-import numpy as np
 from datetime import datetime, timedelta
+
 import random
 import json
+
+# AWS libraries 
 from boto3 import Session
 from botocore.exceptions import BotoCoreError, ClientError
 from contextlib import closing
