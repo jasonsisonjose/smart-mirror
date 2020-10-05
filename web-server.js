@@ -8,6 +8,8 @@ const port = 3000;
 let previousMessage={};
 let updatedMessage={};
 
+// if a message is the same as a previous message, then send the same previous message
+// else: send the new updated message
 app.get('/message', (req,res) => {
   if (previousMessage === updatedMessage) {
     res.send(previousMessage);
@@ -18,6 +20,8 @@ app.get('/message', (req,res) => {
   }
 })
 
+// Post for changing the default message
+// Expecting this format: "{'Message': '<message-contents'}"
 app.post('/message', (req, res) => {
   updatedMessage = req.body;
   console.log(req.body);
