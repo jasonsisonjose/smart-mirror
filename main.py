@@ -91,12 +91,10 @@ def faceDetection(lastTimeCalled, facesDetected, complimentsArray, insultsArray,
     rawCapture=PiRGBArray(camera,size=(640,480))
 
     time.sleep(0.1)
+    
+    # This loop changes if you are using a different video source!
     for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
         try:
-            #=== For using a phone camera as a video stream via bluetooth ===#
-            # img_arr = np.array(bytearray(urllib.request.urlopen(PHONE_URL).read()),dtype=np.uint8)
-            # img = cv2.imdecode(img_arr,-1)
-            # cv2.imshow('IPWebcam',img)
 
             img = frame.array
 
@@ -105,7 +103,8 @@ def faceDetection(lastTimeCalled, facesDetected, complimentsArray, insultsArray,
 
             # Determines whether a picture contains a face, may need to tune for better results
             # @params: gray, float, int
-            # the float value represents 
+            # the float value represents how much of the image size is reduced at each image scale
+            # the int value represents how confident it should be to classify something as a "face", higher = needs to be super confident, lower = needs to be less confident
             faces = face_cascade.detectMultiScale(gray,1.3,8)
 
             # Draw rectangle around the faces
@@ -141,7 +140,7 @@ def faceDetection(lastTimeCalled, facesDetected, complimentsArray, insultsArray,
                 break
         except Exception as e:
             print("Error:", e)
-            print("You don't have a video stream available. Try again dumbass")
+            print("You don't have a video stream available. Try again bro")
             return
 
 # uses the AWS text to speech to generate a mp3 and play the mp3 file
