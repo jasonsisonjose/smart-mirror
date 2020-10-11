@@ -8,13 +8,13 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 
 ### 1. Hardware Prerequisites 
 2. [Setting things up](#setting-things-up)
-  a. Face Detection with Python
-  b. Creating the local web-server
-  c. MagicMirror Configuration
-  d. Adding Compliments and Insults
-  e. Optional additions
-    i. AWS Text-to-speech
-    ii. Compliment Generator API
+  - Face Detection with Python
+  - Creating the local web-server
+  - MagicMirror Configuration
+  - Adding Compliments and Insults
+  - Optional additions
+    - AWS Text-to-speech
+    - Compliment Generator API
 ### 3. How it works
 ### 4. Running the code
 
