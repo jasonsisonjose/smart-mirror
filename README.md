@@ -7,7 +7,7 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 ## Table of Contents:
 
 ### 1. Hardware Prerequisites 
-### 2. (Setting things up) [setting-things-up]
+### 2. [Setting things up] (#setting-things-up)
   a. Face Detection with Python
   b. Creating the local web-server
   c. MagicMirror Configuration
@@ -21,7 +21,7 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 
 
 
-### 2. Setting things up [setting-things-up]
+### 2. Setting things up 
 a. Face Detection with Python
   Hardware Prereqs: a computer, some sort of camera (pi camera, ip webcam, webcam, dslr)
   Software Preqes: cv2, numpy, requests, picamera (for raspberry pi camera)
