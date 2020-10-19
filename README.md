@@ -26,7 +26,32 @@ Hello, this project is designed to display compliments/insults on smart mirror v
   Hardware Prereqs: a computer, some sort of camera (pi camera, ip webcam, webcam, dslr)
   Software Preqes: cv2, numpy, requests, picamera (for raspberry pi camera)
   
-  To get all of the software prereqs, you should first create a virtualenv for python. If you do not know what a virtual environment is, it is essentially creating a workspace for python packages as it can get pretty messy. The instructions for setting up a virtual environment can be found here <insert link here>
+  To get all of the software prereqs, you should first create a virtualenv for python. If you do not know what a virtual environment is, it is essentially creating a workspace for python packages as it can get pretty messy. 
+  >(OPTIONAL, but HIGHLY recommended)
+
+I would highly recommend creating a virtual environment because we will be downloading python packages:
+
+```
+python3 -m pip install --user --upgrade pip
+python3 -m pip install --user virtualenv
+```
+Now that that the pip is upgraded to the lastest version, we can then download virtualenv and activate our virtual env
+
+To create a virtual env:
+```
+python3 -m venv <env-name>
+```
+
+To activate a virtual env: 
+```
+cd <env-name>
+source bin/activate
+```
+
+To deactivate a virtual env:
+```
+deactivate
+```
   
   Now that you have a virtualenv, you should be able to download the required software via ```pip install```. 
   
