@@ -53,7 +53,7 @@ To deactivate a virtual env:
 deactivate
 ```
   
-  Now that you have a virtualenv, you should be able to download the required software via ```pip install```. 
+  Now that you have a virtualenv, you should be able to download the required software via ```pip install -r requirements.txt```. 
   
   Now that we have all of the software requiments we need to connect a camera and make sure that we can access the video stream. If using pi camera, you can access the video stream via:
   ``` camera = PiCamera ```
@@ -71,7 +71,7 @@ deactivate
 b. Node Web-server configuration
   Hardware Prereqs: a computer
   Prereqs: node
-  If you do not have node installed, you can install it via <insert instruction here> or you can follow the offical download options on <insert node download link here>
+  If you do not have node installed, you can follow the offical download options on [here](#https://nodejs.org/en/)
   
   This part of the project is responsible as way of communication between my Magic Mirror and my Raspberry pi. In hindisght, it was probably better to try an implement a web-socket. For this part, we need to create an endpoint where you can push new messages in (POST) and then also get new messages(GET).
   
