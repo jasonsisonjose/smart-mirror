@@ -88,11 +88,11 @@ deactivate
     
 #### e. Optional Additions
 #####    i. AWS Text-to-speech (Amazon Polly) + alternatives
-      This requires you to have an Amazon Developer account. The instructions for signing up for an AWS developer account is well documented [here](https://aws.amazon.com/polly). To set up Amazon Polly, you need to install the AWS CLI (command line interface), and the instructions can also be found here. I am currently using the free trial of AWS for 12 months.
+   This requires you to have an Amazon Developer account. The instructions for signing up for an AWS developer account is well documented [here](https://aws.amazon.com/polly). To set up Amazon Polly, you need to install the AWS CLI (command line interface), and the instructions can also be found here. I am currently using the free trial of AWS for 12 months.
   
-      If you don't want to use AWS because you don't to use a trial, fair enough. In the beginning, I used Google's FREE text to speech python library (gTTS).
+   If you don't want to use AWS because you don't to use a trial, fair enough. In the beginning, I used Google's FREE text to speech python library (gTTS).
 ##### ii. Compliment Generator API
-      If you don't feel like creating your own compliments, there is actually a free compliment generator API, I've provided the url in the main python code itself. All you need to do to get a compliment via this method is to make a HTTP GET request.
+   If you don't feel like creating your own compliments, there is actually a free compliment generator API, I've provided the url in the main python code itself. All you need to do to get a compliment via this method is to make a HTTP GET request.
       
 ### 2. How it works!
 
