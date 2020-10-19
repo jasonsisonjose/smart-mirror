@@ -6,7 +6,7 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 
 ## Table of Contents:
 
-### 1. [Hardware Prerequisites](#hardware-Prerequisites)
+### 1. [Hardware Prerequisites](#hardware-prerequisites)
 ### 2. [Setting things up](#setting-things-up)
   - [Face Detection with Python](#face-Detection-with-Python)
   - [Creating the local web-server](#creating-the-local-web-server)
