@@ -119,4 +119,3 @@ For the Magic Mirror, as long as you are in the directory of MagicMirror, you ca
 ```
 npm start
 ``` 
-If you are running this via ssh, you can do <insert rest of instructions here>
