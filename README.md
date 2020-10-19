@@ -68,7 +68,7 @@ deactivate
   ```
   Controlling cameras via python can vary depending on the type of camera that you are using and can take some research and fiddling around to get it just right!
   
-b. Node Web-server configuration
+#### b. Node Web-server configuration
   Hardware Prereqs: a computer
   Prereqs: node
   If you do not have node installed, you can follow the offical download options on [here](#https://nodejs.org/en/)
@@ -76,7 +76,7 @@ b. Node Web-server configuration
   This part of the project is responsible as way of communication between my Magic Mirror and my Raspberry pi. In hindisght, it was probably better to try an implement a web-socket. For this part, we need to create an endpoint where you can push new messages in (POST) and then also get new messages(GET).
   
   As long as you have node configured, you can run the web-server!
-c. Magic Mirror Module configuration
+#### c. Magic Mirror Module configuration
   Hardware prereqs: a computer
   Prereqs: Magic Mirror
   
@@ -87,18 +87,17 @@ c. Magic Mirror Module configuration
   Each module has a node_helper file which is a javascript file that is responsible for making requests or doing any computations for the original module. In this case, we will be using a node_helper file to make requests to our web-server to retrieve any new messages sent by the face detection program.
   <insert code here>
   
-  d. Adding compliments and insults
+#### d. Adding compliments and insults
     You can simply modify the list of compliments by using the compliments.json and adding new strings to the array
     
     You can do the same thing with the insults by modifying the insults.json file
     
-  e. Optional Additions
-    i. AWS Text-to-speech (Amazon Polly) + alternatives
+#### e. Optional Additions
+#####    i. AWS Text-to-speech (Amazon Polly) + alternatives
       This requires you to have an Amazon Developer account. The instructions for signing up for an AWS developer account is well documented here <insert link here>. To set up Amazon Polly, you need to install the AWS CLI (command line interface), and the instructions can also be found here. I am currently using the free trial of AWS for 12 months.
   
-      If you don't want to use AWS because you don't to use a trial, fair enough. In the beginning, I used Google's FREE text to speech python library (gTTS). It works just fine, all you need to do to install is simply 
-      ``` pip install gTTS``` 
-    ii. Compliment Generator API
+      If you don't want to use AWS because you don't to use a trial, fair enough. In the beginning, I used Google's FREE text to speech python library (gTTS).
+#####    ii. Compliment Generator API
       If you don't feel like creating your own compliments, there is actually a free compliment generator API, I've provided the url in the main python code itself. All you need to do to get a compliment via this method is to make a HTTP GET request to that url like this:
  <insert screenshot of complimentr API>
 3. How it works!
