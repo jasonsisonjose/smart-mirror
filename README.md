@@ -5,8 +5,6 @@ For this project, I am specifically using a raspberry pi 4, raspberry camera mod
 Hello, this project is designed to display compliments/insults on smart mirror via face detection. This github represents the software side and not the entire build. there are 3 components to this project:
 
 ## Table of Contents:
-
-- [Hardware Prerequisites](#hardware-prerequisites)
 - [Setting things up](#setting-things-up)
   - [Face Detection with Python](#face-Detection-with-Python)
   - [Creating the local web-server](#creating-the-local-web-server)
@@ -18,10 +16,7 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 - [How it works](#How-it-works)
 - [Running the code](#Running-the-code)
 
-
-### 1. Hardware Prerequisites
-
-### 2. Setting things up 
+### 1. Setting things up 
 #### a. Face Detection with Python
   Hardware Prereqs: a computer, some sort of camera (pi camera, ip webcam, webcam, dslr)
   Software Preqes: cv2, numpy, requests, picamera (for raspberry pi camera)
@@ -99,11 +94,11 @@ deactivate
 ##### ii. Compliment Generator API
       If you don't feel like creating your own compliments, there is actually a free compliment generator API, I've provided the url in the main python code itself. All you need to do to get a compliment via this method is to make a HTTP GET request.
       
-### 3. How it works!
+### 2. How it works!
 
 It somehow sorta works.
 
-### 4. Running the code
+### 3. Running the code
 
 There is probably a way to manage terminal commands, but for now, I am simply using three separate terminals. One for face detection, one for the web-server, and lastly one for running the Magic Mirror.
 
