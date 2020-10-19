@@ -71,7 +71,7 @@ deactivate
 #### b. Node Web-server configuration
   Hardware Prereqs: a computer
   Prereqs: node
-  If you do not have node installed, you can follow the offical download options on [here](#https://nodejs.org/en/)
+  If you do not have node installed, you can follow the offical download options on [here](https://nodejs.org/en/)
   
   This part of the project is responsible as way of communication between my Magic Mirror and my Raspberry pi. In hindisght, it was probably better to try an implement a web-socket. For this part, we need to create an endpoint where you can push new messages in (POST) and then also get new messages(GET).
   
