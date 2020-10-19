@@ -6,10 +6,10 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 
 ## Table of Contents:
 
-### 1. [Hardware Prerequisites](#Hardware-Prerequisites)
+### 1. [Hardware Prerequisites](#hardware-Prerequisites)
 ### 2. [Setting things up](#setting-things-up)
-  - [Face Detection with Python](#Face-Detection-with-Python)
-  - [Creating the local web-server](#Creating-the-local-web-server)
+  - [Face Detection with Python](#face-Detection-with-Python)
+  - [Creating the local web-server](#creating-the-local-web-server)
   - [MagicMirror Configuration](#MagicMirror-Configuration)
   - [Adding Compliments and Insults](#Adding-Compliments-and-Insults)
   - [Optional additions](#Optional-additions)
