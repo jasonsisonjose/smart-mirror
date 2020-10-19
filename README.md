@@ -22,7 +22,7 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 ### 1. Hardware Prerequisites
 
 ### 2. Setting things up 
-a. Face Detection with Python
+#### a. Face Detection with Python
   Hardware Prereqs: a computer, some sort of camera (pi camera, ip webcam, webcam, dslr)
   Software Preqes: cv2, numpy, requests, picamera (for raspberry pi camera)
   
