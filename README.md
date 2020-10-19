@@ -6,8 +6,8 @@ Hello, this project is designed to display compliments/insults on smart mirror v
 
 ## Table of Contents:
 
-### 1. [Hardware Prerequisites](#hardware-prerequisites)
-### 2. [Setting things up](#setting-things-up)
+- [Hardware Prerequisites](#hardware-prerequisites)
+- [Setting things up](#setting-things-up)
   - [Face Detection with Python](#face-Detection-with-Python)
   - [Creating the local web-server](#creating-the-local-web-server)
   - [MagicMirror Configuration](#MagicMirror-Configuration)
@@ -15,8 +15,8 @@ Hello, this project is designed to display compliments/insults on smart mirror v
   - [Optional additions](#Optional-additions)
     - [AWS Text-to-speech](#AWS-Text-to-speech)
     - [Compliment Generator API](#Compliment-Generator-API)
-### 3. [How it works](#How-it-works)
-### 4. [Running the code](#Running-the-code)
+- [How it works](#How-it-works)
+- [Running the code](#Running-the-code)
 
 
 ### 1. Hardware Prerequisites
