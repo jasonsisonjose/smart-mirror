@@ -75,7 +75,7 @@ deactivate
   Hardware prereqs: a computer
   Prereqs: Magic Mirror
   
-  I would highly recommend downloading the MagicMirror code first to make sure that it works before modifying anything! The MagicMirror code can be found (here)[https://github.com/MichMich/MagicMirror].
+  I would highly recommend downloading the MagicMirror code first to make sure that it works before modifying anything! The MagicMirror code can be found [here](https://github.com/MichMich/MagicMirror).
 
   We need to define a custom module to display text when we want it to, in this case, we want to display a new message on the smart mirror when a face is detected. In my own project, I just modified the original compliments module to my own liking. I will be providing the code separately because the proper way is to create a custom module. 
   
@@ -88,7 +88,7 @@ deactivate
     
 #### e. Optional Additions
 #####    i. AWS Text-to-speech (Amazon Polly) + alternatives
-      This requires you to have an Amazon Developer account. The instructions for signing up for an AWS developer account is well documented (here)[https://aws.amazon.com/polly/]. To set up Amazon Polly, you need to install the AWS CLI (command line interface), and the instructions can also be found here. I am currently using the free trial of AWS for 12 months.
+      This requires you to have an Amazon Developer account. The instructions for signing up for an AWS developer account is well documented [here](https://aws.amazon.com/polly). To set up Amazon Polly, you need to install the AWS CLI (command line interface), and the instructions can also be found here. I am currently using the free trial of AWS for 12 months.
   
       If you don't want to use AWS because you don't to use a trial, fair enough. In the beginning, I used Google's FREE text to speech python library (gTTS).
 ##### ii. Compliment Generator API
