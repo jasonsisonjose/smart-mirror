@@ -18,9 +18,9 @@ import random
 import json
 
 # AWS libraries 
-from boto3 import Session
-from botocore.exceptions import BotoCoreError, ClientError
-from contextlib import closing
+#from boto3 import Session
+#from botocore.exceptions import BotoCoreError, ClientError
+#from contextlib import closing
 
 # if you don't want to generate your own compliments!
 # COMPLIMENT_URL= 'https://complimentr.com/api'
